@@ -1,0 +1,43 @@
+.loginQR {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+
+  &__image {
+    width: 200px;
+
+    margin-bottom: 16px;
+  }
+
+  &__title {
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    margin-bottom: 16px;
+
+    @media (max-width: $md3) {
+      font-size: 24px;
+    }
+
+    @media (max-width: $md4) {
+      font-size: 20px;
+    }
+  }
+
+  &__subtitle {
+    color: var(--translucent-text-color);
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 849px) {
+  .loginQR {
+    width: 90%;
+  }
+}

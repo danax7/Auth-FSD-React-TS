@@ -1,0 +1,33 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.login {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-color);
+  overflow-y: auto;
+
+  &__content {
+    padding: 15px;
+    margin: 15px;
+    border-radius: 15px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    display: flex;
+
+    &_big {
+      width: 825px;
+      min-height: 532px;
+    }
+
+    &_small {
+      width: 500px;
+      min-height: 400px;
+    }
+  }
+}

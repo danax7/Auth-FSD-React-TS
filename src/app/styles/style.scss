@@ -1,0 +1,14 @@
+// для стилей в этой папке приставка *.module.scss излишне
+@import './zero';
+@import './fonts';
+
+body {
+  font-family: $ff;
+  font-size: $fz;
+  font-weight: $fw;
+  overflow-x: hidden;
+
+  &.lock {
+    overflow: hidden;
+  }
+}

@@ -1,0 +1,11 @@
+.formInput {
+  padding-right: 30px;
+
+  &:focus {
+    box-shadow: 0 0 3px 1.5px var(--form-input-focus);
+  }
+}
+
+@mixin linear-animation {
+  transition: all .3s linear;
+}

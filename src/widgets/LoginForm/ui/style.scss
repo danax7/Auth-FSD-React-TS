@@ -1,0 +1,101 @@
+.loginForm {
+  width: 400px;
+  margin-right: 95px;
+  margin-left: 25px;
+
+  &__title {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    color: var(--text-color);
+    text-align: center;
+    margin-bottom: 9px;
+
+    @media (max-width: $md3) {
+      font-size: 24px;
+    }
+  }
+
+  &__subtitle {
+    font-weight: 500;
+    font-size: 15px;
+    color: var(--translucent-text-color);
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  &__inputBlock {
+    margin: 0 0 17px 0;
+  }
+
+  &__inputDescription {
+    font-size: 17px;
+    line-height: 21px;
+    margin-bottom: 5px;
+  }
+
+  &__input {
+    display: inline-block;
+    width: 100%;
+    height: 48px;
+    border: 1px solid #6b737a;
+    border-radius: 4px;
+    background: var(--back);
+    padding-left: 4px;
+    padding-left: 16px;
+    font-size: 16px;
+  }
+
+  &__forgotPassword {
+    cursor: pointer;
+    display: inline-block;
+    color: var(--text-color);
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    margin-bottom: 35px;
+  }
+
+  &__registration {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+  }
+}
+
+@media (max-width: 849px) {
+  .loginForm {
+    margin: 10px 0 40px 0;
+  }
+}
+
+@media (max-width: $md4) {
+  .loginForm {
+    width: 90%;
+  }
+}
+
+.loginForm__inputBlock {
+  &_smallMargin {
+    margin: 0 0 37px 0;
+  }
+
+  &_bigMargin {
+    margin: 0 0 38px 0;
+  }
+
+  .loginForm__inputDescription {
+    font-size: 17px;
+    line-height: 21px;
+    margin-bottom: 5px;
+  }
+
+  .loginForm__input {
+    display: inline-block;
+    width: 100%;
+    height: 35px;
+    border-radius: 2px;
+    background: var(--back);
+    padding-left: 4px;
+  }
+}
